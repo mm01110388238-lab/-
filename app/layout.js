@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Toaster } from "react-hot-toast";
+import ToasterProvider from "@/components/ToasterProvider";
 
 export const metadata = {
   title: "فصل تانية",
@@ -18,15 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="ar" dir="rtl">
       <body>
         {children}
-        <Toaster
-          position="top-center"
-          toastOptions={{
-            style: {
-              fontFamily: "Cairo, sans-serif",
-              direction: "rtl",
-            },
-          }}
-        />
+        <ToasterProvider />
       </body>
     </html>
   );
