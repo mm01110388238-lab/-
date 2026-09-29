@@ -1,5 +1,4 @@
 import "./globals.css";
-import ToasterProvider from "@/components/ToasterProvider";
 
 export const metadata = {
   title: "فصل تانية",
@@ -16,10 +15,7 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
-      <body>
-        {children}
-        <ToasterProvider />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
